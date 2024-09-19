@@ -32,7 +32,7 @@
 
       <div class="navbar-extra">
         <a href="#" id="search-button"><i data-feather="search"></i></a>
-        <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+        <a href="#" id="shopping-cart-button"><i data-feather="shopping-cart"></i></a>
         <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
       </div>
 
@@ -45,6 +45,36 @@
        
       <!-- Search form end -->
 
+      <!-- Shoppping Cart Start -->
+
+      <div class="shopping-cart">
+        <div class="cart-item"> 
+          <img src="./img/kopi-hitam.jpg" alt="kopi hitam">
+          <div class="item-detail">
+            <h3>Detail Produk</h3>
+            <div class="item-price">IDR 7K</div>
+          </div>
+          <i data-feather="trash-2" class="remove-item"></i>
+        </div>
+        <div class="cart-item"> 
+          <img src="./img/kopi-hitam.jpg" alt="kopi hitam">
+          <div class="item-detail">
+            <h3>Detail Produk</h3>
+            <div class="item-price">IDR 7K</div>
+          </div>
+          <i data-feather="trash-2" class="remove-item"></i>
+        </div>
+        <div class="cart-item"> 
+          <img src="./img/kopi-hitam.jpg" alt="kopi hitam">
+          <div class="item-detail">
+            <h3>Detail Produk</h3>
+            <div class="item-price">IDR 7K</div>
+          </div>
+          <i data-feather="trash-2" class="remove-item"></i>
+        </div>
+      </div>
+
+      <!-- Shoppping Cart end -->
       
 
     </nav>
@@ -138,7 +168,27 @@
         <div class="product-card">
           <div class="product-icons">
             <a href="#"><i data-feather="shopping-cart"></i> </a>
-            <a href="#"><i data-feather="eye"></i> </a>
+            <a href="#" class="item-detail-button"><i data-feather="eye"></i> </a>
+          </div>
+          <div class="product-image">
+            <img src="./img/kopi-hitam.jpg" alt="Product 1">
+          </div>
+          <div class="product-content">
+            <h3>Kopi Hitam</h3> <!-- nama barang -->
+            <div class="product-stars">
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star"></i>
+            </div>
+            <div class="product-price">IDR 7k <span>IDR 10K</span></div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-icons">
+            <a href="#"><i data-feather="shopping-cart"></i> </a>
+            <a href="#" class="item-detail-button"><i data-feather="eye"></i> </a>
           </div>
           <div class="product-image">
             <img src="./img/matcha-greentea.jpg" alt="Product 1">
@@ -158,7 +208,47 @@
         <div class="product-card">
           <div class="product-icons">
             <a href="#"><i data-feather="shopping-cart"></i> </a>
-            <a href="#"><i data-feather="eye"></i> </a>
+            <a href="#" class="item-detail-button"><i data-feather="eye"></i> </a>
+          </div>
+          <div class="product-image">
+            <img src="./img/matcha-greentea.jpg" alt="Product 1">
+          </div>
+          <div class="product-content">
+            <h3>Matcha Green Tea</h3> <!-- nama barang -->
+            <div class="product-stars">
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+            </div>
+            <div class="product-price">IDR 10k</div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-icons">
+            <a href="#"><i data-feather="shopping-cart"></i> </a>
+            <a href="#" class="item-detail-button"><i data-feather="eye"></i> </a>
+          </div>
+          <div class="product-image">
+            <img src="./img/matcha-greentea.jpg" alt="Product 1">
+          </div>
+          <div class="product-content">
+            <h3>Matcha Green Tea</h3> <!-- nama barang -->
+            <div class="product-stars">
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star"></i>
+            </div>
+            <div class="product-price">IDR 10k</div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-icons">
+            <a href="#"><i data-feather="shopping-cart"></i> </a>
+            <a href="#" class="item-detail-button"><i data-feather="eye"></i> </a>
           </div>
           <div class="product-image">
             <img src="./img/matcha-greentea.jpg" alt="Product 1">
@@ -239,9 +329,35 @@
 
   <!-- footer end -->
 
+  <!-- Modal Box Item Detail Start -->
+  
+  <div class="modal" id="item-detail-modal">
+    <div class="modal-container">
+      <a href="#" class="close-icon"><i data-feather="x"></i></a>
+      <div class="modal-content">
+        <img src="./img/kopi-hitam.jpg" alt="matcha greentea">
+      <div class="product-content">
+        <h3>Matcha Green Tea</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique excepturi odio eius veniam ducimus quasi!</p>
 
+        <div class="product-stars">
+          <i data-feather="star" class="star-full"></i>
+          <i data-feather="star" class="star-full"></i>
+          <i data-feather="star" class="star-full"></i>
+          <i data-feather="star" class="star-full"></i>
+          <i data-feather="star"></i>
+        </div>
+        <div class="product-price">IDR 7k</div>
 
+        <a href="#"><i data-feather="shopping-cart"></i> <span>Tambah ke Keranjang</span></a>
 
+      </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <!-- Modal Box Item Detail End -->
 
 
 
